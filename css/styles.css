@@ -1,6 +1,9 @@
-/* * {
+*,
+::after,
+::before {
     box-sizing: border-box;
-} */
+}
+
 :root {
     --main-white-color: #ffffff;
     --primary-background-color: #F5F4FA;
@@ -52,7 +55,7 @@ a {
 .container {
     margin-left: auto;
     margin-right: auto;
-    width: 1170px;
+    width: 1200px;
 
     border: 2px dashed green;
 }
@@ -62,28 +65,55 @@ a {
 }
 
 /* Шапка */
-    /* Лого */
-    .logo {
-        /* position: absolute; */
-        width: 145px;
-        height: 31px;
-        left: 215px;
-        top: 24px;
+/* Лого */
 
-        color: var(--first-logo-color);
-        font-family: "Raleway", sans-serif;
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 1.19;
-        letter-spacing: 0.02em;
-    }
+.logo {
+ /* position: absolute; */
+    width: 145px;
+    height: 31px;
+    left: 215px;
+    top: 24px;
 
-    .logo-blue {
-        color: var(--nav-color);
-    }
+    color: var(--first-logo-color);
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.02em;
+}
 
-    /* Навігація по сайту + контакти */
-    .navi-link {
+.logo-blue {
+    color: var(--nav-color);
+}
+
+ /* Навігація по сайту + контакти */
+
+ .header-flex {
+    display: flex;
+    gap: 344px;
+
+    border-bottom: 1px solid #ECECEC;
+    padding-left: 15px;
+}
+
+ .navigait {
+    display: flex;
+    align-items: center;
+    gap: 93px;
+}
+
+.navi {
+    display: flex;
+    gap: 50px;
+    padding: 32px 0;
+}
+.contacts {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+} 
+
+.navi-link {
         color: var(--primary-text-color);
         Font-weight: 500;
         font-size: 14px;
@@ -91,28 +121,28 @@ a {
         letter-spacing: 0.02em;
     }
 
-    .navi .navi-link.current {
+.navi .navi-link.current {
         color: var(--nav-color);
     }
 
-    .contacts-link {
-        color: var(--secondary-text-color);
-        Font-weight: 500;
-        font-size: 14px;
-        Line-height: 1.14;
-        letter-spacing: 0.02em;
-    }
+.contacts-link {
+     color: var(--secondary-text-color);
+    Font-weight: 500;
+    font-size: 14px;
+    Line-height: 1.14;
+    letter-spacing: 0.02em;
+}
 
-    .navi-link:focus,
-    .contacts-link:focus,
-    .foot-add-link:focus,
-    .foot-add-map:focus,
-    .navi-link:hover,
-    .contacts-link:hover,
-    .foot-add-link:hover,
-    .foot-add-map:hover {
-        color: var(--nav-color);
-    }
+.navi-link:focus,
+.contacts-link:focus,
+.foot-add-link:focus,
+.foot-add-map:focus,
+.navi-link:hover,
+.contacts-link:hover,
+.foot-add-link:hover,
+.foot-add-map:hover {
+     color: var(--nav-color);
+}
      
 /* Hero */
 .hero {
@@ -255,6 +285,8 @@ a {
  /* PORTFOLIO */
 
  .filters {
+    display: flex;
+    justify-content: center; 
     margin-top: 94px;
  }
 
@@ -284,6 +316,16 @@ a {
 }
  
 /* Проекти */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0; почему есть отступ все равно*/
+    gap: 30px;
+
+
+}
 
 .project-list {
     margin-top: 50px;
