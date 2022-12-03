@@ -5,46 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфоліо</title>
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
 </head>
 <body>
      <!-- Шапка  -->
      <header>
-        <div class="container"> 
-            <div class="header-flex">
-                <nav class="navigait"> 
-                    <!-- Лого -->
-                    <a href="#" class="logo"><span class="logo-blue">Web</span>Studio</a>
-                    <!-- Навігація по сайту -->
-                    <ul class="navi">
-                        <li>
-                            <a href="./index.html" class="navi-link">Студія</a>
-                        </li> 
-                        <li>
-                            <a href="./portfolio.html" class="navi-link current">Портфоліо</a>
-                        </li>
-                        <li>
-                            <a href="#" class="navi-link">Контакти</a>
-                        </li>
-                    </ul>             
-                </nav>         
-                <!-- Контакти -->    
-                <ul class="contacts">
+        <div class="container header-flex"> 
+            <nav class="navigait"> 
+                <!-- Лого -->
+                <a href="#" class="logo"><span class="logo-blue">Web</span>Studio</a>
+                <!-- Навігація по сайту -->
+                <ul class="navi-list">
                     <li>
-                        <a href="mailto:info@devstudio.com" class="contacts-link">info@devstudio.com</a>
-                    </li>         
+                        <a href="./index.html" class="navi-link">Студія</a>
+                    </li> 
                     <li>
-                        <a href="tel:+380961111111" class="contacts-link">+38 096 111 11 11</a> 
-                    </li>  
-                </ul>
-            </div>  
+                        <a href="./portfolio.html" class="navi-link current">Портфоліо</a>
+                    </li>
+                    <li>
+                        <a href="#" class="navi-link">Контакти</a>
+                    </li>
+                </ul>             
+            </nav>         
+            <!-- Контакти -->    
+            <ul class="contacts">
+                <li>
+                    <a href="mailto:info@devstudio.com" class="contacts-link">info@devstudio.com</a>
+                </li>         
+                <li>
+                    <a href="tel:+380961111111" class="contacts-link">+38 096 111 11 11</a> 
+                </li>  
+            </ul>  
         </div> 
     </header>
     <main>
-        <section class="projects-section">
-            <!-- Фільтри -->
-            <div class="container">
+        <section class="section">
+            <div class="container">     
+                 <!-- Фільтри -->
                 <h1 class="visually-hidden">Фільтри</h1>
                 <ul class="filters">
                     <li class="filters-list">
@@ -63,73 +62,88 @@
                         <button type="button" class="filters-button">Маркетинг</button>
                     </li>
                 </ul>
-
-            <!--Проект-->
+                <!--Проекти-->
                 <h2 class="visually-hidden">Проекти</h2>
                 <ul class="projects">
                     <li class="project-list">
                         <a href="#" class="project-link">
                             <img src="./images/portfolio/image-1.jpg" alt="Дисплей ноутбуку" width="370">
-                            <h3 class="project-name">Технокряк</h3>
-                            <p class="project-text">Веб-сайт</p>
+                            <div class="signature">
+                                <h3 class="project-name">Технокряк</h3>
+                                <p class="project-text">Веб-сайт</p>
+                            </div>
                         </a>
                     </li>
                     <li class="project-list">
                         <a href="" class="project-link">
                             <img src="./images/portfolio/image-2.jpg" alt="Два баскетболісти" width="370">
-                            <h3 class="project-name">Постер New Orlean vs Golden Star</h3>
-                            <p class="project-text">Дизайн</p>
+                            <div class="signature">
+                                <h3 class="project-name">Постер New Orlean vs Golden Star</h3>
+                                <p class="project-text">Дизайн</p>
+                            </div>
                         </a>
                     </li>
                     <li class="project-list"> 
                         <a href="" class="project-link">
                             <img src="./images/portfolio/image-3.jpg" alt="Логотип ресторану" width="370">
-                            <h3 class="project-name">Ресторан Seafood</h3>
-                            <p class="project-text">Додаток</p>
-                        </a>
-                        
+                            <div class="signature">
+                                <h3 class="project-name">Ресторан Seafood</h3>
+                                <p class="project-text">Додаток</p>
+                            </div>
+                        </a>                        
                     </li>
                     <li class="project-list">
                         <a href="" class="project-link">
                             <img src="./images/portfolio/image-4.jpg" alt="Навушники" width="370">
-                            <h3 class="project-name">Проєкт Prime</h3>
-                            <p class="project-text">Маркетинг</p>
+                            <div class="signature">
+                                <h3 class="project-name">Проєкт Prime</h3>
+                                <p class="project-text">Маркетинг</p>
+                            </div>
                         </a>
                     </li>
                     <li class="project-list">
                         <a href="" class="project-link">
                             <img src="./images/portfolio/image-5.jpg" alt="Дві коробки" width="370">
-                            <h3 lang="en" class="project-name">Проєкт Boxes</h3>
-                            <p class="project-text">Додаток</p>
+                            <div class="signature">
+                                <h3 lang="en" class="project-name">Проєкт Boxes</h3>
+                                <p class="project-text">Додаток</p>
+                            </div>
                         </a>
                     </li>
                     <li class="project-list">
                         <a href="" class="project-link">
                             <img src="./images/portfolio/image-6.jpg" alt="Монітор" width="370">
-                            <h3 lang="en" class="project-name">Inspiration has no Borders</h3>
-                            <p class="project-text">Веб-сайт</p>
+                            <div class="signature">
+                                <h3 lang="en" class="project-name">Inspiration has no Borders</h3>
+                                <p class="project-text">Веб-сайт</p>
+                            </div>
                         </a>
                     </li>
                     <li class="project-list"> 
                         <a href="" class="project-link">
                             <img src="./images/portfolio/image-7.jpg" alt="Розворот журналу" width="370">
-                            <h3 lang="en" class="project-name">Видання Limited Edition</h3>
-                            <p class="project-text">Дизайн</p>
+                            <div class="signature">
+                                <h3 lang="en" class="project-name">Видання Limited Edition</h3>
+                                <p class="project-text">Дизайн</p>
+                        </div>
                         </a>
                     </li>
                     <li class="project-list">
                         <a href="" class="project-link">
                             <img src="./images/portfolio/image-8.jpg" alt="Лейбл" width="370">
-                            <h3 lang="en" class="project-name">Проєкт LAB</h3>
-                            <p class="project-text">Маркетинг</p>
+                            <div class="signature">
+                                <h3 lang="en" class="project-name">Проєкт LAB</h3>
+                                <p class="project-text">Маркетинг</p>
+                            </div>
                         </a>
                     </li>
                     <li class="project-list">
                         <a href="" class="project-link">
                             <img src="./images/portfolio/image-9.jpg" alt="Ноутбук із презентацією" width="370">
-                            <h3 
-                        lang="en" class="project-name">Growing Business</h3>
-                            <p class="project-text">Додаток</p>
+                            <div class="signature">
+                                <h3 lang="en" class="project-name">Growing Business</h3>
+                                <p class="project-text">Додаток</p>
+                        </div>
                         </a>
                     </li>
                 </ul>
