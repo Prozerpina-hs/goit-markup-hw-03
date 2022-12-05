@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Студія</title>
-    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
 </head>
@@ -17,24 +17,21 @@
                 <!-- Лого -->
                 <a href="#" class="logo"><span class="logo-blue">Web</span>Studio</a>
                  <!-- Навігація по сайту -->
-                <ul class="navi-list">
-                    <li>
-                        <a href="./index.html" class="navi-link current">Студія</a>
+                <ul class="navi">
+                    <li class="navi-list"><a href="./index.html" class="navi-link current">Студія</a>
                     </li> 
-                    <li>
-                        <a href="./portfolio.html" class="navi-link">Портфоліо</a>
+                    <li class="navi-list"><a href="./portfolio.html" class="navi-link">Портфоліо</a>
                     </li>
-                    <li>
-                        <a href="#" class="navi-link">Контакти</a>
+                    <li class="navi-list"><a href="#" class="navi-link">Контакти</a>
                     </li>
                 </ul>             
             </nav>         
                 <!-- Контакти -->    
              <ul class="contacts">
-                <li>
+                <li class="contact-list">
                     <a href="mailto:info@devstudio.com" class="contacts-link">info@devstudio.com</a>
                 </li>         
-                <li>
+                <li class="contact-list">
                     <a href="tel:+380961111111" class="contacts-link">+38 096 111 11 11</a> 
                 </li>
              </ul>
@@ -46,7 +43,7 @@
         <!-- Hero - Замовити послугу -->
          <section class="hero">
             <div class="container"> 
-                <h1 class="hero-text">Ефективні рішення для <br> вашого бізнесу</h1>
+                <h1 class="hero-text">Ефективні рішення для вашого бізнесу</h1>
                 <button type="button" class="hero-button">Замовити послугу</button>
             </div> 
         </section>
@@ -123,7 +120,7 @@
     </main>
     
     <!-- Подвал -->
-    <footer class="foot">
+    <footer class="footer-style">
         <div class="container">
             <a href="#" class="foot logo"><span class="logo-blue">Web</span>Studio</a>
             <!-- Адрес-подвал class="foot-address" -->

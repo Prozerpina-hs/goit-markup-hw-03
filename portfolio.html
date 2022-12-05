@@ -5,46 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфоліо</title>
-    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
 </head>
 <body>
      <!-- Шапка  -->
-     <header>
+     <header class="header-border">
         <div class="container header-flex"> 
             <nav class="navigait"> 
                 <!-- Лого -->
                 <a href="#" class="logo"><span class="logo-blue">Web</span>Studio</a>
-                <!-- Навігація по сайту -->
-                <ul class="navi-list">
-                    <li>
-                        <a href="./index.html" class="navi-link">Студія</a>
+                 <!-- Навігація по сайту -->
+                <ul class="navi">
+                    <li class="navi-list"><a href="./index.html" class="navi-link">Студія</a>
                     </li> 
-                    <li>
-                        <a href="./portfolio.html" class="navi-link current">Портфоліо</a>
+                    <li class="navi-list"><a href="./portfolio.html" class="navi-link current">Портфоліо</a>
                     </li>
-                    <li>
-                        <a href="#" class="navi-link">Контакти</a>
+                    <li class="navi-list"><a href="#" class="navi-link">Контакти</a>
                     </li>
                 </ul>             
             </nav>         
-            <!-- Контакти -->    
-            <ul class="contacts">
-                <li>
+                <!-- Контакти -->    
+             <ul class="contacts">
+                <li class="contact-list">
                     <a href="mailto:info@devstudio.com" class="contacts-link">info@devstudio.com</a>
                 </li>         
-                <li>
+                <li class="contact-list">
                     <a href="tel:+380961111111" class="contacts-link">+38 096 111 11 11</a> 
-                </li>  
-            </ul>  
+                </li>
+             </ul>
         </div> 
     </header>
     <main>
         <section class="section">
-            <div class="container">     
-                 <!-- Фільтри -->
-                <h1 class="visually-hidden">Фільтри</h1>
+            <div class="container">
+                <h1 class="visually-hidden">Портфоліо</h1>     
+                <!-- Фільтри -->
                 <ul class="filters">
                     <li class="filters-list">
                         <button type="button" class="filters-button">Усі</button>
@@ -63,7 +60,6 @@
                     </li>
                 </ul>
                 <!--Проекти-->
-                <h2 class="visually-hidden">Проекти</h2>
                 <ul class="projects">
                     <li class="project-list">
                         <a href="#" class="project-link">
@@ -151,12 +147,11 @@
         </section>
     </main>
     <!-- Footer -->
-    <footer class="foot">
+    <footer class="footer-style">
         <div class="container">
-            <!-- Лого-подвал -->
             <a href="#" class="foot logo"><span class="logo-blue">Web</span>Studio</a>
-            <!-- Адрес-подвал -->
-            <address class="foot-address">
+            <!-- Адрес-подвал class="foot-address" -->
+            <address>
                 <ul>
                     <li>
                         <a href="https://goo.gl/maps/4996Xed7HbbkdrFU8" target="_blank" rel="nofollow noopener noreferrer" class="foot-add-map">
@@ -170,7 +165,7 @@
                     </li>
                 </ul>
             </address>
-        </div>
+        </div>    
     </footer>
 </body>
 </html>

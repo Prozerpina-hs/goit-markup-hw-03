@@ -15,11 +15,11 @@
 }
 
 body {
-    width: 1600px;
     color: var(--secondary-text-color);
     font-family: "Roboto", sans-serif;
     background-color: var(--main-white-color);
     letter-spacing: 0.03em;
+    margin: auto;
 }
 
 h1,
@@ -39,6 +39,13 @@ p {
 a {
     text-decoration: none;
 }
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-right: 0;
+} 
+
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -63,26 +70,25 @@ a {
     padding: 0 15px;
 }
 
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin-right: 0;
-} 
-
 /* Шапка */
 /* Лого */
-
+.header-border {
+    border-bottom: 1px solid #ECECEC;
+}
 .header-flex {
     display: flex;
-    gap: 344px;
+    justify-content: space-between;
+}
 
-    border-bottom: 1px solid #ECECEC;
+.navigait {
+    display: flex;
+    align-items: center;
 }
 
 .logo {
     width: 145px;
     height: 31px;
+    margin-right: 93px;
     
     color: var(--first-logo-color);
     font-family: "Raleway", sans-serif;
@@ -91,33 +97,27 @@ img {
     line-height: 1.19;
     letter-spacing: 0.02em;
 }
-
 .logo-blue {
     color: var(--nav-color);
 }
 
  /* Навігація по сайту + контакти */
 
- .navigait {
+.navi {
     display: flex;
-    align-items: center;
-    gap: 93px;
 }
 
 .navi-list {
-    display: flex;
-    gap: 50px;
-    padding: 32px 0;
+    display: block;
+    margin-right: 50px;
 }
-.contacts {
-    padding: 32px 0;
-    display: flex;
-    align-items: center;
-    gap: 50px;
-} 
-
+.navi-list:last-child {
+    margin-right: 0;
+}
 .navi-link { 
+    display: block;
     padding: 32px 0;
+    
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -126,10 +126,23 @@ img {
     }
 
 .navi-list .navi-link.current {
-        color: var(--nav-color);
-    }
+    color: var(--nav-color);
+}
 
+.contacts {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+} 
+.contact-list {
+    margin-left: 50px;
+} 
+.contact-list:first-child {
+    margin-left: 0;
+}
 .contacts-link {
+    display: block;
+    padding: 32px 0;
     color: var(--secondary-text-color);
     Font-weight: 500;
     font-size: 14px;
@@ -157,7 +170,9 @@ img {
 }
 
 .hero-text {
-    
+    width: 696px;
+    margin: 0 auto;
+
     color: var(--main-white-color);
     font-weight: 900;
     font-size: 44px;
@@ -196,7 +211,9 @@ img {
     display: flex;
     gap: 30px;
 }
-
+.peculiarities-item {
+    flex-basis: calc((100%-90px)/3);
+}
 .peculiarities-name {
     margin-bottom: 10px;
 
@@ -219,7 +236,7 @@ img {
 }
 .capabilities-list{
     display: flex;
-    padding-top: 50px;
+    margin-top: 50px;
     gap: 30px;
 }
 
@@ -240,7 +257,7 @@ img {
 .team-list {
     display: flex;
     gap: 30px;
-    padding-top: 50px;
+    margin-top: 50px;
 }
 .team-item {
     padding-bottom: 30px;
@@ -272,9 +289,8 @@ img {
 
 /* Подвал */
 
-.foot {
+.footer-style {
     padding: 60px 0;
-
     background-color: var(--secondary-background-color);
 }
 
@@ -288,12 +304,18 @@ img {
 }
 
 .foot-add-map {
+    display: block;
+    margin-top: 20px;
+
     color: var(--main-white-color);
     font-size: 14px;
     font-style: normal;
     line-height: 1.71;
 }
 .foot-add-link {
+    display: block;
+    margin-top: 9px;
+
     color: rgba(255, 255, 255, 0.6);
     font-size: 14px;
     font-style: normal;
@@ -307,6 +329,9 @@ img {
     justify-content: center;
  }
 
+.filters-list:not(:last-child) {
+    margin-right: 8px;
+}
 .filters-button {
     display: inline-block;
     border: 1px solid transparent;
@@ -325,6 +350,7 @@ img {
     cursor: pointer;
 }
 
+
 .filters-button:hover,
 .filters-button:focus {
     background-color: var(--nav-color);
@@ -339,24 +365,27 @@ img {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
     gap: 30px;
 }
 
 .project-list {
-    flex-basis: 370px;
-    margin-top: 50px;
-
+    display: block;
+ 
     background-color: var(--main-white-color);
 }
+
 .signature {
+    padding: 20px 24px;
+
     max-width: 370px;
-    border: 1px solid #eeeeee
+    border-right: 1px solid #eeeeee;
+    border-left:1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
 }
 .project-name {
-    margin-top: 20px;
     margin-bottom: 4px;
-    margin-left: 24px;
-
+     
     color: var(--primary-text-color);
     font-weight: 700;
     font-size: 18px;
@@ -365,9 +394,6 @@ img {
 }
 
 .project-text {
-    margin-bottom: 20px;
-    margin-left: 24px;
-
     color: var(--secondary-text-color);
     font-size: 16px;
     line-height: 1.88;
